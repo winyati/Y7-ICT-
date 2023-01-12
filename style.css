@@ -302,7 +302,7 @@ section{
    width: 100%;
    padding:1.4rem;
    font-size: 1.8rem;
-   color:rgb(86, 125, 172);
+   color:var(--black);
    border:var(--border);
    margin:1rem 0;
 }
