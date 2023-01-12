@@ -277,14 +277,6 @@ section{
    gap:2rem;
 }
 
-.contact .row .image{
-   flex:1 1 50rem;
-}
-
-.contact .row .image img{
-   width: 20%;
-}
-
 .contact .row form{
    flex:1 1 30rem;
    border:var(--border);
