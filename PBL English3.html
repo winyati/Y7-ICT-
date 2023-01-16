@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-color:  #d9b3ff;
+}
+h1{
+  font-size: 65px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.banner-img{
+  background-image: url(2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 109%;
+}
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  width: 80%;
+  padding: 40px 0;
+  text-align: center;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background-color: rgb(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: bold;
+  border: 10px inset #fff;
+}
+.banner-text p{
+  padding: 0 8%;
+}
+h2{
+  text-align: center;
+}
+.container{
+  position: relative;
+  width: 1262px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+
+}
+.container .card{
+  position: relative;
+  max-width: 320px;
+  height: 320px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 30px;
+    height: 400px;
+    background-color: whitesmoke;
+}
+.container .card .imgBx
+{
+  position: relative;
+  width: 260px;
+  height: 200px;
+  background-color: ;
+}
+.container .card .imgBx img{
+  max-width: 250px;
+  border-radius: 10px;
+    border: solid 1px;
+    text-align: center;
+}
+.content{
+  width: 260px;
+
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 7px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 23%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content2 {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+    background-color: white;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.body2
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1d061a
+
+}
+
+.container33
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  float: left;
+  width: 23%;
+}
+
+.container3 .box3
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+  float: left;
+  width: 28%;
+}
+
+.container3 .box3::before
+{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container3 .box3::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container3 .box:hover:before,
+.container3 .box3:hover:after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+.container3 .box3:nth-child(1):before,
+.container3 .box3:nth-child(1):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+
+.container3 .box3:nth-child(2):before,
+.container3 .box3:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.container3 .box3:nth-child(3):before,
+.container3 .box3:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+.container3 .box3 span
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+  float: left;
+  width: 23%;
+}
+
+.container3 .box3 span::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;  
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  float: left;
+  width: 23%;
+}
+
+.containe3 .box3:hover span::before
+{
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  height:190px;
+  padding-top:20px;
+  padding-left:15px;
+  padding-right:15px;
+  float: left;
+  width: 23%;
+}
+
+.container3 .box3 span::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation-delay: -1s;
+  width:600px;
+}
+
+.container3 .box3:hover span:after
+{
+  bottom: -50px;
+  right: 50px;
+  width: 110px;
+  height: 110px;
+  opacity: 1;
+
+}
+
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(10px);
+  }
+  
+  50%
+  {
+    transform: translate(-10px);
+  }
+}
+
+.container3 .box3 .content3
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+
+}
+
+.container3 .box3:hover .content3
+{
+  left: -25px;
+  padding: 70px 50px;
+}
+
+.container3 .box3 .content3 h2
+{
+  font-size: 2em;
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+.container3 .box3 .content3 p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  color: white;
+}
+
+.container3 .box .content3 a
+{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 6px;
+  
+}
+
+.container3 .box3 .content3 a:hover
+{
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+
+}
+@import url('https://fonts.googleapis.com/css?family=Nuto:400,700');
+
+
+body{
+    font-family: poppins;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+  font-border: 1px solid rgba(255, 255, 255, 0.65);
+    font-size: 50px;
+    backdrop-filter: blur(10px);
+}
+
+
+.area{
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+  
+    width: 100%;
+    height:250vh;
+    
+   
+}
+
+.bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  float: right;
+  margin: 15px;
+  margin-top: 300px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+  margin-right: 20px;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+  </style>
+ <body>
+  <span><a href="file:///C:/Users/User/Desktop/New%20folder%20(2)/English%20language%20PBL%20Website.html#projects"></a></span>
+
+
+<div class="banner-img">
+<div class="banner-text">
+  <h1>How can English benefit us in the future?</h1>
+  <p>Improved communication: English is the most widely spoken language in the world, and knowing English can help you communicate with a larger number of people.
+
+Increased job opportunities: Many international companies prefer to hire employees who are fluent in English, as it is the language of business.
+
+Facilitation of travel: English is the dominant language in many popular tourist destinations, so knowing English can make travel easier and more enjoyable.
+
+Access to a wider range of information: A large portion of the world's information is available in English, including books, movies, and websites.
+</p>
+</div>
+</div>
+<h2>Why is English used as a language of instruction?</h2>
+
+<div class="container">
+  <div class="card">
+    <div class="imgBx">
+      <img src="en1.png">
+    </div>
+    <div class="content">
+      <p>English is the most widely spoken language in the world: English is spoken by over 1.5 billion people as a first or second language, and is the dominant language in many countries.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="imgBx">
+      <img src="e8.jpg">
+    </div>
+    <div class="content">
+      <p>English is relatively easy to learn: English is considered to be a relatively easy language to learn, particularly for speakers of other Germanic languages. This makes it an attractive choice as a language of instruction for many students.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="imgBx">
+      <img src="exam.jpg">
+    </div>
+    <div class="content">
+      <p>English is a global language: English is widely used as a second language in countries where it is not the primary language. This has led to its widespread use as a language of instruction in schools and universities around the world..</p>
+    </div>
+  </div>
+</div><br><br>
+<div class="main">
+
+
+<hr>
+
+<h2>Why does Myanmar use the English language?</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content2">
+      <img src="school2.jpg" alt="Mountains" style="width:100%">
+      <p>English was introduced to Myanmar during the colonial period, when the country was ruled by the British Empire. It was used as the language of instruction in schools and was also spoken by the educated elite.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content2">
+    <img src="q1.jpg" alt="Lights" style="width:100%">
+      <p>After independence in 1948, the use of English declined in Myanmar, and the government promoted the use of the Burmese language. However, English continued to be taught in schools and was still spoken by many people in the country.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content2">
+    <img src="r3.jpg" alt="Nature" style="width:100%">
+      <p>In the 21st century, the use of English has once again increased in Myanmar, particularly in business and education. Many young people in the country are learning English in order to improve their job prospects and to communicate with the wider world.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content2">
+    <img src="engpbl.png" alt="Mountains" style="width:100%">
+      <p>In summary, the use of English in Myanmar has fluctuated over time, but it has always played an important role in the country's education and business sectors. Today, it is once again becoming an important language in the country.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content2">
+  <img src="l1.jpg" alt="Bear" style="width:100%">
+  <h3>What are the advantages of learning English?</h3>
+  <p>1.Improved communication: English is the most widely spoken language in the world, and knowing English can help you communicate with a larger number of people.</p>
+  <p>2.Increased job opportunities: Many international companies prefer to hire employees who are fluent in English, as it is the language of business.</p>
+  <p>3.Facilitation of travel: English is the dominant language in many popular tourist destinations, so knowing English can make travel easier and more enjoyable.</p>
+</div><br><br>
+
+<!-- END MAIN -->
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="imge.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="w4.jpg" style="width:100%">
+  <div class="text">English is the language of international communication and commerce</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="y12.jpeg" style="width:100%">
+  <div class="text">Learning English can improve job prospects</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="t2.jpg" style="width:100%">
+  <div class="text">English is the language of science, technology, and the arts</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<h2>What is basic of English communication?</h2>
+<br>
+<div class="container3">
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Grammar</h2>
+      <p>Having a good understanding of English grammar is essential for clear and effective communication. This includes knowing how to structure sentences and use verb tenses correctly.</p>
+    </div>
+  </div>
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Vocabulary</h2>
+      <p>A rich vocabulary is important for expressing ideas clearly and accurately. It is helpful to learn new words and phrases regularly in order to expand your vocabulary.</p>
+    </div>
+  </div>
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Pronunciation</h2>
+      <p>Accurate pronunciation is important for being understood by others. It is helpful to practice pronunciation regularly and to listen to native speakers in order to improve your accent.</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container3">
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Listening skills</h2>
+      <p>Good listening skills are essential for effective communication. This includes being able to focus on what others are saying and to understand their meaning.</p>
+    </div>
+  </div>
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Speaking skills</h2>
+      <p>Being able to express yourself clearly and confidently is important for effective communication. This includes being able to articulate your thoughts and ideas clearly and to use appropriate body language.</p>
+    </div>
+  </div>
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Reading skills</h2>
+      <p>Good reading skills are important for understanding written communication and for learning new information.</p>     
+    </div>
+  </div>
+   <div class="container3">
+  <div class="box3">
+    <span></span>
+    <div class="content3">
+      <h2>Writing skills</h2>
+      <p>Being able to write clearly and effectively is important for a variety of purposes, including taking notes, writing emails, and composing essays.</p>
+    </div>
+  </div>
+  </div>
+
+
+<div class="area">
+  <a href="file:///C:/Users/User/Downloads/English%20and%20Myanmar.html" class="bn5">Next</a>
+</div>
+<h3>In summary, the basic skills of English communication include grammar, vocabulary, pronunciation, listening, speaking, reading, and writing.</h3>
+</div>
+</body>
+</html>
